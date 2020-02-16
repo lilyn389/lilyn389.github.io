@@ -11,22 +11,30 @@
     <!--Favicon-->
     <link rel="shortcut icon" href="#">
   </head>
-    <!--Stylesheet-->
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <!--Stylesheet-->
+
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,400i&display=swap" rel="stylesheet">
+
+
+
+  <!--BODY-->
 
   <body>
     <header>
-      <h1 class="title">Lily Oanh Nguyen</h1>
       <div class="menu">
-        <ul>
-          <li><a href="/create">Create</a></li>
-          <li><a href="/explore">Explore</a></li>
-        </ul>
+        <span class="menu-item"><a href="#">created</a></span>
+        <span class="menu-item"><a href="#">explored</a></span>
+      </div>
+      <div class="title-container">
+        <h1 class="title">Lily <span class="title-full">Oanh</span> Nguyen</h1>
       </div>
     </header>
-
+    <!-- ARROW
+    <div class="down_arrow">
+      <a href="#">⌄</a>
+    </div>
+-->
     <div class="about-me">
       <p>
         Hi, I'm Lily!
@@ -36,17 +44,30 @@
         I am studying Computer Science at Texas A&M University. I am a self-motivated individual passionate about programming. I am seeking to invest my time in a career I find extremely interesting.
       </p>
     </div>
+    <div class="footer-links">
+      <a class="links" target="_blank" href="https://www.linkedin.com/in/lilyn389">linkedin</a>
+      <a class="links" target="_blank" href="https://www.github.com/lilyn389
+">github</a>
+    </div>
 
     <footer>
-      <ul>
-        <li><a class="links" target="_blank" href="https://www.linkedin.com/in/lilyn389">linkedin</a></li>
-        <li><a class="links" target="_blank" href="https://www.github.com/lilyn389
-">github</a></li>
-      </ul>
       <p id="credits">
-        © Lily Nguyen 2020.
+        © LILY NGUYEN
       </p>
     </footer>
+
+    <script src="jquery-3.4.1.min.js">
+      $(document).ready(function() {
+
+        $('.title-full').hide();
+
+        $('.title').hover(function() {
+          $('.title-full').fadeToggle(1500);
+        });
+
+      });
+
+    </script>
   </body>
 
 </html>

@@ -2,28 +2,59 @@ body {
   background-color: #F5F5F5;
   width: 100%;
   color: #212121;
+  display: grid;
 }
 
 html {
-  font: 100%/1.9;
   font-family: 'Karla', sans-serif;
   overflow-x: hidden;
   /*font-family: 'Poppins', sans-serif;*/
   text-align: center;
 }
 
+.menu {
+  text-align: right;
+  padding: 10px 17px 0px 0px;
+  font-size: 20px;
+}
+
+.menu-item {
+  padding: 17px;
+}
+
+.title {
+  font-size: 80px;
+  cursor: pointer;
+  margin-top: 300px;
+  margin-bottom: 300px;
+}
+
+.title-full {
+  cursor: pointer;
+}
+
 .about-me {
-  line-height: 20px;
+  background-color: white;
+  padding: 50px 20px 100px 25px;
+  font-size: 30px;
+  text-align: left;
+  margin-left: -10px;
 }
 
 a {
   color: gray;
+  text-decoration: none;
+
 }
 
 a:hover {
   color: black;
+
 }
 
+
 footer {
-  background-color: white;
+  background: #B3D4D5;
+
 }
+
