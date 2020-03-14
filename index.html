@@ -15,50 +15,59 @@
   <!--Stylesheet-->
 
   <link rel="stylesheet" type="text/css" href="/stylesheet.css">
-  <link href="https://fonts.googleapis.com/css?family=Karla:400,400i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
 
 
 
   <!--BODY-->
 
   <body>
+
     <header>
-      <div class="menu">
-        <span class="menu-item"><a href="#">created</a></span>
-        <span class="menu-item"><a href="#">explored</a></span>
+      <div class="container-navbar">
+        <nav>
+          <a href="#">lily nguyen-</a>
+          <div class="right-nav">
+            <a href="#">created</a>
+            <a href="#">explored</a>
+          </div>
+        </nav>
       </div>
-      <div class="title-container">
-        <h1 class="title">Lily <span class="title-full">Oanh</span> Nguyen</h1>
-      </div>
+
     </header>
     <!-- ARROW
     <div class="down_arrow">
       <a href="#">⌄</a>
     </div>
 -->
-    <div class="about-me">
+    <div class="container-title">
+      <h1 class="title">Lily <span class="title-full">Oanh</span> Nguyen</h1>
+    </div>
+
+    <div class="container-about">
       <p>
         Hi, I'm Lily!
       </p>
       <p>
         I love to create and to explore. I am eager to experience new challenges.<br><br>
-        I am studying Computer Science at Texas A&M University. I am a self-motivated individual passionate about programming. I am seeking to invest my time in a career I find extremely interesting.
+        I am studying Computer Science at Texas A&M University. I am a self-motivated individual passionate about programming. I am seeking to invest my time in a career I find extremely motivating and interesting.
       </p>
     </div>
-    <div class="footer-links">
-      <a class="links" target="_blank" href="https://www.linkedin.com/in/lilyn389">linkedin</a>
-      <a class="links" target="_blank" href="https://www.github.com/lilyn389
+
+    <div class="container-contacts">
+      <a target="_blank" href="https://www.linkedin.com/in/lilyn389">linkedin</a>
+      <a target="_blank" href="https://www.github.com/lilyn389
 ">github</a>
     </div>
 
-    <footer>
-      <p id="credits">
-        © LILY NGUYEN
-      </p>
-    </footer>
+    <div class="container-foot">
+      <footer>
+        <p>© LILY NGUYEN</p>
+      </footer>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
     <script>
-      jQuery(document).ready(function($){
+      jQuery(document).ready(function($) {
 
         $('.title-full').hide();
 
